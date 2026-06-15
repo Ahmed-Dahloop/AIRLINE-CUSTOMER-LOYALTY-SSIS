@@ -1,0 +1,2209 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/1/2026 12:30:15 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DAHLOOP"
+  DTS:CreatorName="DAHLOOP\Nima"
+  DTS:DTSID="{4B4EC599-C998-4388-A045-5345861362FE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ODS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{EADFAD47-4213-4016-BC1F-B251BB3D9E79}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A7496889-A0C8-4DD0-B9F6-5FEF1A2916C7}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\NTI\technical\Data Engineering\Eng kyrillos\Customer Loyalty History.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿Loyalty Number"
+              DTS:DTSID="{2D952F50-E0F4-4638-99FF-5CAF443DCB8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{7F6BE272-49F8-4080-81B8-4A9FE52220A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Province"
+              DTS:DTSID="{CC73C7AD-A9F8-4D7D-B65F-81BA6973E12E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{5219611C-4DB2-4789-AEAE-5DD8422EF84C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Postal Code"
+              DTS:DTSID="{5CF388D7-33BD-4758-88F0-30DFF720E404}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{7BFC4033-CA12-4B42-8487-C5AFE1DEF439}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Education"
+              DTS:DTSID="{0D975551-5280-4E91-8F9D-A48B39B870BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Salary"
+              DTS:DTSID="{D714FAE0-25A4-4B18-AB91-50467C33FDB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marital Status"
+              DTS:DTSID="{8E9B0813-8C63-42A6-A33A-B3644DB98749}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Loyalty Card"
+              DTS:DTSID="{C0E9F312-7F8E-4667-AB07-09F564F18525}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLV"
+              DTS:DTSID="{EE3285F5-B8E1-4405-B825-AB89F23D3449}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Type"
+              DTS:DTSID="{98ECCB60-C7B0-4876-95E3-3C820DFA96C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Year"
+              DTS:DTSID="{240A617E-5932-417B-94F3-B707800A2B2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Month"
+              DTS:DTSID="{3F88FE14-A699-4819-95F4-E203BC266351}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cancellation Year"
+              DTS:DTSID="{2B017404-EEBB-4180-A497-44D21282ED40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cancellation Month"
+              DTS:DTSID="{DCB77BA9-463F-4985-A702-AF12639706F1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0D37A6C9-1D50-415D-934A-D7EEB94ADB31}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="E:\NTI\technical\Data Engineering\Eng kyrillos\Customer Flight Activity.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Loyalty Number"
+              DTS:DTSID="{752A94F8-8CCC-431B-A81F-D645FCB47DC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{85C835D6-AFBE-4D9D-B663-3403B209ACF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month"
+              DTS:DTSID="{544F178A-8053-4E31-9A31-8C34B7DF9BE3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Flights"
+              DTS:DTSID="{BD830C66-8DA3-4BFD-A8E2-DEEB5588FF4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Distance"
+              DTS:DTSID="{BC09890B-7CC5-489E-B3FB-D747B68AE8CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Points Accumulated"
+              DTS:DTSID="{E5A48002-5331-4630-9B28-D155105E7E44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Points Redeemed"
+              DTS:DTSID="{6B7C6C33-1C28-444A-8630-6A7C4B7B081C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dollar Cost Points Redeemed"
+              DTS:DTSID="{46D3C59D-2DC0-4A34-B168-D3650E88105A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Flight"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{855E2BF8-1347-4627-9F4D-D4EF5AAB24EA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flight"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Flight\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Year]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Month]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Month"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Loyalty Number]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Loyalty Number"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Total Flights]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Flights"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Distance]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Distance"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Points Accumulated]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Points Accumulated"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Points Redeemed]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Points Redeemed"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]" />
+                    <inputColumn
+                      refId="Package\Flight\Data Conversion.Inputs[Data Conversion Input].Columns[Dollar Cost Points Redeemed]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Dollar Cost Points Redeemed"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Flight\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]"
+                      name="Copy of Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Month]"
+                      name="Copy of Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Month]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loyalty Number]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loyalty Number]"
+                      name="Copy of Loyalty Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Total Flights]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Total Flights]"
+                      name="Copy of Total Flights"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Distance]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Distance]"
+                      name="Copy of Distance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Points Accumulated]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Points Accumulated]"
+                      name="Copy of Points Accumulated"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Points Redeemed]"
+                      name="Copy of Points Redeemed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dollar Cost Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dollar Cost Points Redeemed]"
+                      name="Copy of Dollar Cost Points Redeemed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Flight\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Flight\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Flight\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Flight\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Flight\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                      name="Loyalty Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Flights]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]"
+                      name="Total Flights"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Distance]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]"
+                      name="Distance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Accumulated]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]"
+                      name="Points Accumulated"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Redeemed]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]"
+                      name="Points Redeemed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dollar Cost Points Redeemed]"
+                      length="50"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]"
+                      name="Dollar Cost Points Redeemed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Loyalty Number" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Flights]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Total Flights" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Distance]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Accumulated]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Points Accumulated" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Points Redeemed" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dollar Cost Points Redeemed]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Dollar Cost Points Redeemed" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Flight\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Flight_ODS]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Flight\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{2FB3C0EE-D977-4FFD-A477-1BA27B7A5B49}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DAHLOOP_SQLEXPRESS.customerODS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Distance]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Distance"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loyalty Number]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Loyalty Number"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_LoyaltyNumber]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total Flights]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Flights"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalFlights]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Points Accumulated]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Points Accumulated"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PointsAccumulated]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Points Redeemed]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Points Redeemed"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PointsRedeemed]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dollar Cost Points Redeemed]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Dollar Cost Points Redeemed"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DollarCostPointsRedeemed]"
+                      lineageId="Package\Flight\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Year]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Year"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]" />
+                    <inputColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Month]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Month"
+                      externalMetadataColumnId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\Flight\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Month]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_LoyaltyNumber]"
+                      dataType="i4"
+                      name="Flight_LoyaltyNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      dataType="i4"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalFlights]"
+                      dataType="i4"
+                      name="TotalFlights" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      dataType="i4"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PointsAccumulated]"
+                      dataType="numeric"
+                      name="PointsAccumulated"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PointsRedeemed]"
+                      dataType="i4"
+                      name="PointsRedeemed" />
+                    <externalMetadataColumn
+                      refId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DollarCostPointsRedeemed]"
+                      dataType="i4"
+                      name="DollarCostPointsRedeemed" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Flight\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flight\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Flight\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Flight\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Flight\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Flight.Paths[Data Conversion Output]"
+              endId="Package\Flight\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Flight\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Flight.Paths[Flat File Source Output]"
+              endId="Package\Flight\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Flight\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loyalty"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F729E061-3984-45C0-A5E4-DDCF37D3C457}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loyalty"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Loyalty\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loyalty\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Province]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Province]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Province]"
+                      name="Province"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Postal Code]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]"
+                      name="Postal Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Education]"
+                      name="Education"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Salary]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]"
+                      name="Salary"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Marital Status]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]"
+                      name="Marital Status"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Card]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]"
+                      name="Loyalty Card"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLV]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]"
+                      name="CLV"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Type]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]"
+                      name="Enrollment Type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Year]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]"
+                      name="Enrollment Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Month]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]"
+                      name="Enrollment Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Year]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]"
+                      name="Cancellation Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Month]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]"
+                      name="Cancellation Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿Loyalty Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿Loyalty Number]"
+                      length="50"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿Loyalty Number]"
+                      name="ï»¿Loyalty Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Province]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Province" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Postal Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Postal Code" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Education" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Salary]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Salary" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Marital Status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Marital Status" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Card]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Loyalty Card" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLV]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CLV" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Enrollment Type" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Enrollment Year" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Enrollment Month" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Cancellation Year" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Cancellation Month" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿Loyalty Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ï»¿Loyalty Number" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Loyalty\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Loyalty_ODS]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loyalty\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{2FB3C0EE-D977-4FFD-A477-1BA27B7A5B49}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DAHLOOP_SQLEXPRESS.customerODS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Province]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Province"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Province]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Province]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Education]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Education"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Education]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLV]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CLV"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLV]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postal Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Postal Code"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Marital Status]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Marital Status"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loyalty Card]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Loyalty Card"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoyaltyCard]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Enrollment Type"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentType]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Enrollment Year"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentYear]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Month]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Enrollment Month"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentMonth]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cancellation Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cancellation Year"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CancellationYear]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cancellation Month]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cancellation Month"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CancellationMonth]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Salary]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Salary"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Salary]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]" />
+                    <inputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ï»¿Loyalty Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿Loyalty Number"
+                      externalMetadataColumnId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoyaltyNumber]"
+                      lineageId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿Loyalty Number]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoyaltyNumber]"
+                      dataType="i4"
+                      name="LoyaltyNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Province]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Province" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="PostalCode" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Education" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Salary]"
+                      dataType="r8"
+                      name="Salary" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MaritalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoyaltyCard]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LoyaltyCard" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLV]"
+                      dataType="numeric"
+                      name="CLV"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="EnrollmentType" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentYear]"
+                      dataType="i4"
+                      name="EnrollmentYear" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnrollmentMonth]"
+                      dataType="i4"
+                      name="EnrollmentMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CancellationYear]"
+                      dataType="i4"
+                      name="CancellationYear" />
+                    <externalMetadataColumn
+                      refId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CancellationMonth]"
+                      dataType="i4"
+                      name="CancellationMonth" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Loyalty\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loyalty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loyalty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loyalty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Loyalty.Paths[Flat File Source Output]"
+              endId="Package\Loyalty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Loyalty\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C98D7B17-6864-47D0-B6FC-E738B3425B66}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2FB3C0EE-D977-4FFD-A477-1BA27B7A5B49}"
+          SQLTask:SqlStatementSource="Truncate TABLE Loyalty_ODS;&#xA;Truncate TABLE Flight_ODS;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{31DC9AFF-550F-4CEF-B76A-D7AF339CB530}"
+      DTS:From="Package\Truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Loyalty" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{00F6030B-DA60-4A56-B488-75D8C7626B65}"
+      DTS:From="Package\Loyalty"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Flight" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Truncate"
+          TopLeft="336.666648272012,45.9333330139188" />
+        <NodeLayout
+          Size="111.2,41.6"
+          Id="Package\Loyalty"
+          TopLeft="479.999973773957,223.599998445113" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="396.266648272012,87.5333330139188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.333325501945,136.066665431195"
+              Start="0,0"
+              End="139.333325501945,128.566665431195">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.0333327155974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.0333327155974"
+                    Point2="0,68.0333327155974"
+                    Point3="4,68.0333327155974" />
+                  <mssgle:LineSegment
+                    End="135.333325501945,68.0333327155974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.333325501945,68.0333327155974"
+                    Point2="139.333325501945,68.0333327155974"
+                    Point3="139.333325501945,72.0333327155974" />
+                  <mssgle:LineSegment
+                    End="139.333325501945,128.566665431195" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="104,41.6"
+          Id="Package\Flight"
+          TopLeft="109.166660702063,328.46666438255" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="518.399973773957,265.199998445114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-357.233313071894,63.2666659374369"
+              Start="0,0"
+              End="-357.233313071894,55.7666659374369">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8451060850806" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.8451060850806"
+                    Point2="0,25.8451060850806"
+                    Point3="-4,25.8451060850806" />
+                  <mssgle:LineSegment
+                    End="-353.233313071894,25.8451060850806" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-353.233313071894,25.8451060850806"
+                    Point2="-357.233313071894,25.8451060850806"
+                    Point3="-357.233313071894,29.8451060850806" />
+                  <mssgle:LineSegment
+                    End="-357.233313071894,55.7666659374369" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loyalty">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Loyalty\Flat File Source"
+          TopLeft="158.333324682382,144.733332326876" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Loyalty\OLE DB Destination"
+          TopLeft="339.166648135418,385.666663984789" />
+        <EdgeLayout
+          Id="Package\Loyalty.Paths[Flat File Source Output]"
+          TopLeft="233.933324682382,186.333332326876">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="190.833323453036,199.333331657913"
+              Start="0,0"
+              End="190.833323453036,191.833331657913">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,95.6666658289566" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,95.6666658289566"
+                    Point2="0,99.6666658289566"
+                    Point3="4,99.6666658289566" />
+                  <mssgle:LineSegment
+                    End="186.833323453036,99.6666658289566" />
+                  <mssgle:CubicBezierSegment
+                    Point1="186.833323453036,99.6666658289566"
+                    Point2="190.833323453036,99.6666658289566"
+                    Point3="190.833323453036,103.666665828957" />
+                  <mssgle:LineSegment
+                    End="190.833323453036,191.833331657913" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loyalty\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Flight">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Flight\Flat File Source"
+          TopLeft="309.99999538064,171.999997437" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Flight\OLE DB Destination"
+          TopLeft="492.999992653728,311.999995350838" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Flight\Data Conversion"
+          TopLeft="208.749996889383,308.749995399267" />
+        <EdgeLayout
+          Id="Package\Flight.Paths[Flat File Source Output]"
+          TopLeft="385.59999538064,213.599997437">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-98.8499984912575,95.1499979622662"
+              Start="0,0"
+              End="-98.8499984912575,87.6499979622662">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5749989811331" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.5749989811331"
+                    Point2="0,47.5749989811331"
+                    Point3="-4,47.5749989811331" />
+                  <mssgle:LineSegment
+                    End="-94.8499984912575,47.5749989811331" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-94.8499984912575,47.5749989811331"
+                    Point2="-98.8499984912575,47.5749989811331"
+                    Point3="-98.8499984912575,51.5749989811331" />
+                  <mssgle:LineSegment
+                    End="-98.8499984912575,87.6499979622662" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Flight.Paths[Data Conversion Output]"
+          TopLeft="364.749996889383,331.174995375052">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128.249995764345,0"
+              Start="0,0"
+              End="120.749995764345,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="120.749995764345,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flight\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
